@@ -20,9 +20,9 @@ module RailsDeviseTokenAuth
       allow do
         origins '*'
         resource '*', 
-        headers: :any, 
-        methods: [:get, :patch, :post, :options, :delete, :head],
-        expose: ['access-token', 'token-type', 'client', 'expiry', 'uid']
+          headers: :any, 
+          methods: [:get, :patch, :post, :options, :delete, :head],
+          expose: ['access-token', 'token-type', 'client', 'expiry', 'uid']
       end
     end
   end
